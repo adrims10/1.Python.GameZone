@@ -45,6 +45,11 @@ preguntas = [
 ]
 
 def juego():
+    """esta funcion define la mecanica del juego preguntados.
+    Argum: utilizamos bucles for para iterar y movernos sobre el diccionario donde tenemos las preguntas y
+           respuestas, metemos el limite de 10 pregunta para ganar y si se falla alguna se para el juego.
+    return: Esta funcion no devuelve nada
+    """
     marcador = 0
     for pregunta in preguntas:
         print(pregunta["pregunta"])

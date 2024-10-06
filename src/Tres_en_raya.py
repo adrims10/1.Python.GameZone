@@ -1,6 +1,8 @@
 import random
 class Tres_en_raya:
     def __init__(self):
+        """defino la clase del juego donde le meto las variables que vamos a ir usando.
+        """
         self.tablero = [[' ' for _ in range(3)] for _ in range(3)]
         self.jugadores = ['X', 'O']
         self.jugadores[0]= input('Jugador 1 dime como te llamas')
@@ -11,6 +13,9 @@ class Tres_en_raya:
         self.juego()
 
     def patron_tablero(self):
+        """Esta funcion esta para definir el patron del tablero.
+        return:None
+        """
         print("\n")
         for fila in self.tablero:
             print("----" * 10)
@@ -19,6 +24,13 @@ class Tres_en_raya:
         print("\n")
     
     def verificar_ganador(self):
+        """Definimos la siguiente funcion metodo para meter las reglas de la victoria de uno o de otro jugador.
+        Arg: Se establecen las condiciones de quien gana si se meten los patrones en las columnas y las filas 
+            mediante for e if condicionales.
+
+        Returns:
+            _none
+        """
         for fila in self.tablero:
             if fila[0] == fila[1] == fila[2] != ' ':
                 return fila[0]
@@ -36,6 +48,14 @@ class Tres_en_raya:
         return None
 
     def juego(self):
+        """funcion metodo que define el juego y como se desarrolla.
+        Arg: mientras que sean menos de 9 movimientos, 3 y 3 entonces se desarrola la partida, utilizamos un 
+            excep value error por si se mete un valor a la hora de indicar filas y columnas.
+            llamamos a la funcion anterior para verificar el ganador 
+            y devilvemos el final.
+            tambien llamamos a la funcion metodo del patron del tablero
+        return: none
+        """
         while self.movimientos < 9:
             self.patron_tablero()
             jugador_actual = self.jugadores[self.turno % 2]

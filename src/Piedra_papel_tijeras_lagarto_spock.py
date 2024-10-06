@@ -11,6 +11,14 @@ ganadores = {
 }
 
 def juego():
+    """Definimos una funcion donde introducimos las normas del juego piedra papel,tijeras,spock,lagarto.
+    Args:
+         mientras uno de los jugadores no gane 3 partidas el bucle se sigue ejecutando.
+         introducimos varios if como condiciones para sabe quien gana la partida.
+         hemos definido un diccionario donde tenemos las claves y los valores de las variables ganadoras y perfedoras.
+         la maquina elige a traves de import random.
+    retun: Nada
+    """
     ganajugador = 0
     ganamaquina = 0
     elecciones_maquina = []
