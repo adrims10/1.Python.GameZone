@@ -42,6 +42,7 @@ class Ahorcado:
                        \__|___|___|___|__/
     """
         print(patron)
+        print('Pista:Palabras relacionadas con el Bootcamp')
         
         while self.intentos_restantes > 0:
             estado_actual = self.mostrar_estado()
