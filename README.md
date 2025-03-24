@@ -1,46 +1,40 @@
-# Proyecto Módulo 1
+# Programacion de juegos mediante Python
 
-![arcade](https://github.com/user-attachments/assets/f3ca3aab-024b-4eb3-bf9c-518e2d5e1bf7)
+![arcade](https://github.com/user-attachments/assets/d8acf8e2-b0f6-42ae-afe8-3d862da4b9b2)
 
-Bienvenidos a la GameZone de Adrián Moreno, este es el primer proyecto  del Bootcamp de alto rendimiento de **HACKIO**. 
-
-# *Es un placer recibirlos*
-
+El objetivo de este proyecto es desarrollar cuatro juegos clásicos que se puedan ejecutar en la terminal utilizando Python. A través de esta implementación, se busca reforzar y consolidar los principales conceptos del lenguaje, aplicando buenas prácticas de programación y fortaleciendo la lógica computacional.
 
 # 📝 Juegos que vamos a desarrollar:
 
-- **Preguntados** : En este juego tendremos que ir haciendo preguntas al usuario sobre una variedad de temas y el usuario tendrá que ir respondiendo correctamente para avanzar. Las preguntas podrán ser de distintas categorías: cultura general, historia, entretenimiento, actualidad, etc. El usuario ganará el juego si consigue adivinar 10 preguntas seguidas.
+- **Preguntados/QUIZ** : En este juego se iran haciendo preguntas al usuario sobre una variedad de temas y el usuario tendrá que ir respondiendo correctamente para avanzar. Las preguntas podrán ser de distintas categorías: cultura general, historia, entretenimiento, actualidad, etc. El usuario ganará el juego si consigue adivinar 10 preguntas seguidas.
 
-- **Tres en raya** : Mítico juego donde el primero que consiga colocar tres fichas seguidas(en horizontal, vertical o diagonal) en un tablero 3x3 gana la partida. En nuestro caso, la empresa nos ha pedido que el usuario juegue contra la máquina.
+- **Tres en raya** : Mítico juego donde el primero que consiga colocar tres fichas seguidas(en horizontal, vertical o diagonal) en un tablero 3x3 gana la partida. En nuestro caso el juego preguntara a los dos usuarios sus nombres y en vez de X y O saldran sus nombres hasta que consigan terminar el juego.
 
-- **Ahorcado**: El usuario juega contra la máquina. En este juego el usuario tendrá que adivinar una palabra elegida al azar por la máquina de entre una lista que nosotros definiremos previamente. Cada vez que el usuario se equivoque, mostraremos una nueva parte del personaje del ahorcado en una horca. Si el usuario consigue adivinar la palabra antes de que se le acaben las oportunidades, gana el juego.
+- **Ahorcado**: En este juego el usuario tendrá que adivinar una palabra elegida al azar por la máquina de entre una lista que nosotros definiremos previamente. Cada vez que el usuario se equivoque, mostraremos una nueva parte del personaje del ahorcado en una horca. Si el usuario consigue adivinar la palabra antes de que se le acaben las oportunidades, gana el juego.
 
-- **Piedra-papel-tijera** : en este juego el usuario tendrá que elegir una de las opciones y después la máquina eligirá otra al azar. Gana el primero que gane tres rondas en total. Además la empresa nos ha pedido que, además del juego clásico, el usuario pueda elegir la opción de jugar a **piedra-papel-tijera-lagarto-spock**. 
+- **Piedra-papel-tijera,lagarto,spock** : en este juego el usuario tendrá que elegir una de las opciones y después la máquina eligirá otra al azar. Gana el primero que gane tres rondas en total.
 
 
 ## 🗂️ Estructura del Proyecto
 
-        ├── notebooks/           # Notebooks de Jupyter con los codigos en bruto y posibles pruebas
-        ├── src/                 # Scripts de procesamiento y modelado
+        ├── src/                 # Clases y funciones para la definicion de las reglas y los modelos de los juegos
         ├── main.py              # Menu para inicializar los juegos
         ├── README.md            # Descripción del proyecto
       
 ## 🛠️ Instalación y Requisitos
         Este proyecto usa Python 3.12.6.
-        Se ha importado la libreria random.
-
- 
-- **Resultados y Conclusiones**
-
-Despues de un fin de semana de trabajo hemos concluido con exito el proyecto por lo que hemos logrado el primero objetivo.
-
-- **Próximos Pasos**
-Si fuera posible los proximos pasos serian, complementar las preguntas en el juego preguntados, asi como implementar palabras aleatorias en el juego ahorcado.
-Por otro lado mejorar la prestacion de los juegos para que tengan una visualizacion mas dinamica y entretenida.
- 
+        Se ha importado la librería random.
 
 
-![OIP](https://github.com/user-attachments/assets/a3261f22-9193-45df-bf33-14a396dfd988)
+Si quieres ver mas proyectos de Python u otras tecnologias no dudes visitar mi repositorio [adrims10](https://github.com/adrims10)
+
+**Adrián Moreno**
+
+
+
+
+
+
 
 
 
