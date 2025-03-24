@@ -1,21 +1,18 @@
 import random
 class Tres_en_raya:
     def __init__(self):
-        """defino la clase del juego donde le meto las variables que vamos a ir usando.
-        """
+        """Defino la clase del juego donde le meto las variables que vamos a ir usando."""
         self.tablero = [[' ' for _ in range(3)] for _ in range(3)]
         self.jugadores = ['X', 'O']
-        self.jugadores[0]= input('Jugador 1 dime como te llamas')
-        self.jugadores[1]= input('Jugador 2 dime como te llamas')
-        self.jugadores_nombres = [ self.jugadores[0],self.jugadores[1]]
+        self.jugadores[0] = input('Jugador 1, dime cómo te llamas: ')
+        self.jugadores[1] = input('Jugador 2, dime cómo te llamas: ')
+        self.jugadores_nombres = [self.jugadores[0], self.jugadores[1]]
         self.turno = 0
         self.movimientos = 0
-        self.juego()
+        self.jugar()
 
     def patron_tablero(self):
-        """Esta funcion esta para definir el patron del tablero.
-        return:None
-        """
+        """Esta función define el patrón del tablero."""
         print("\n")
         for fila in self.tablero:
             print("----" * 10)
@@ -24,13 +21,7 @@ class Tres_en_raya:
         print("\n")
     
     def verificar_ganador(self):
-        """Definimos la siguiente funcion metodo para meter las reglas de la victoria de uno o de otro jugador.
-        Arg: Se establecen las condiciones de quien gana si se meten los patrones en las columnas y las filas 
-            mediante for e if condicionales.
-
-        Returns:
-            _none
-        """
+        """Verifica si hay un ganador en el juego."""
         for fila in self.tablero:
             if fila[0] == fila[1] == fila[2] != ' ':
                 return fila[0]
@@ -47,25 +38,29 @@ class Tres_en_raya:
         
         return None
 
-    def juego(self):
-        """funcion metodo que define el juego y como se desarrolla.
-        Arg: mientras que sean menos de 9 movimientos, 3 y 3 entonces se desarrola la partida, utilizamos un 
-            excep value error por si se mete un valor a la hora de indicar filas y columnas.
-            llamamos a la funcion anterior para verificar el ganador 
-            y devilvemos el final.
-            tambien llamamos a la funcion metodo del patron del tablero
-        return: none
-        """
+    def jugar(self):
+        """Función que desarrolla el flujo del juego."""
         while self.movimientos < 9:
             self.patron_tablero()
             jugador_actual = self.jugadores[self.turno % 2]
             if jugador_actual == self.jugadores[0]:
-                print(f"Turno del jugador {self.jugadores_nombres[0]}. Elige una fila y columna (0, 1 o 2):")
+                print(f"Turno del jugador {self.jugadores_nombres[0]}. Elige una fila y columna (0, 1 o 2) o escribe 'salir' para terminar el juego:")
             else:
-                print(f"Turno del jugador {self.jugadores_nombres[1]}. Elige una fila y columna (0, 1 o 2):")
+                print(f"Turno del jugador {self.jugadores_nombres[1]}. Elige una fila y columna (0, 1 o 2) o escribe 'salir' para terminar el juego:")
+            
+            fila_input = input("Fila: ")
+            if fila_input.lower() == "salir":
+                print("Juego terminado por el jugador.")
+                return
+            
+            columna_input = input("Columna: ")
+            if columna_input.lower() == "salir":
+                print("Juego terminado por el jugador.")
+                return
+            
             try:
-                fila = int(input("Fila: "))
-                columna = int(input("Columna: "))
+                fila = int(fila_input)
+                columna = int(columna_input)
             except ValueError:
                 print("Entrada inválida. Intenta de nuevo.")
                 continue
@@ -90,11 +85,7 @@ class Tres_en_raya:
 
 if __name__ == "__main__":
     Tres_en_raya()
-    
-   
-    
 
-     
 
     
 
