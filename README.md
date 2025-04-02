@@ -2,8 +2,8 @@
 
 ![arcade](https://github.com/user-attachments/assets/d8acf8e2-b0f6-42ae-afe8-3d862da4b9b2)
 
-# El objetivo de este proyecto es desarrollar cuatro juegos clásicos que se puedan ejecutar en la terminal utilizando Python. 
 
+El objetivo de este proyecto es desarrollar cuatro juegos clásicos que se puedan ejecutar en la terminal utilizando Python. 
 A través de esta implementación, se busca reforzar y consolidar los principales conceptos del lenguaje, aplicando buenas prácticas de programación y fortaleciendo la lógica computacional.
 
 ---
